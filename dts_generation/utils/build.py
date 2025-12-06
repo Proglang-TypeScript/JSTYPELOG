@@ -2,21 +2,10 @@ import json
 from pathlib import Path
 from typing import Optional
 
-from dts_generation._utils._helpers import create_dir, create_file, dir_empty, get_children, file_exists
-from dts_generation._utils._shell import ShellError, shell
-from dts_generation._utils._printer import printer
-from dts_generation._utils._shared import CACHE_PATH, DATA_PATH, DECLARATION_SCRIPTS_PATH, TEMPLATE_PATH, PackageDataMissingError, PackageInstallationError, INSTALLATION_TIMEOUT
-
-RUN_TIME_ANALYZER_PATH = Path("run-time-information-analyzer")
-DECLARATION_GENERATOR_PATH = Path("ts-declaration-file-generator")
-DEFINITELY_TYPED_PATH = Path("DefinitelyTyped")
-NPM_TOOLS_PATH = Path("npm-tools")
-TRANSPILE_PATH = NPM_TOOLS_PATH / "transpile.js"
-REPOSITORY_PATH = CACHE_PATH / "repository"
-PACKAGE_JSON_PATH = DATA_PATH / "package.json"
-README_PATH = DATA_PATH / "README.md"
-MAIN_PATH = DATA_PATH / "index.js"
-TESTS_PATH = DATA_PATH / "tests"
+from dts_generation.utils.helpers import create_dir, create_file, dir_empty, get_children, file_exists
+from dts_generation.utils.shell import ShellError, shell
+from dts_generation.utils.printer import printer
+from dts_generation.utils.shared import *
 
 def build_definitely_typed(build_path: Path, verbose_setup: bool) -> None:
     with printer.with_verbose(verbose_setup):

@@ -5,7 +5,7 @@ import re
 from typing import Optional
 
 from easy_prompting.prebuilt import GPT, ListLogger, FileLogger, FuncLogger, ReadableLogger, Prompter, ListI, TextI, CodeI, ChoiceI, Item, delimit_code, list_text, PrintDebugger, pad_text
-from dts_generation._utils import *
+from dts_generation.utils import *
 
 MAX_LENGTH_FILE_PRINTS = 1
 MAX_LENGTH_FILE_PROMPTS = 10000

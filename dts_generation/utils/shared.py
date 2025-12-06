@@ -1,11 +1,7 @@
 from pathlib import Path
 
-### CONSTANTS ###
-
 INSTALLATION_TIMEOUT = 600
 EXECUTION_TIMEOUT = 60
-
-### Paths ###
 
 ASSETS_PATH = Path(__file__).parent.parent.parent / "assets"
 DECLARATION_SCRIPTS_PATH = ASSETS_PATH / "declaration"
@@ -29,8 +25,16 @@ COMBINED_ALL_PATH = Path(f"combined_all")
 BASIC_MODE_PATHS = [EXTRACTION_PATH, GENERATION_PATH]
 COMBINED_MODE_PATHS = [COMBINED_EXTRACTION_PATH, COMBINED_GENERATION_PATH, COMBINED_ALL_PATH]
 ALL_MODE_PATHS = BASIC_MODE_PATHS + COMBINED_MODE_PATHS
-
-### Exceptions ###
+RUN_TIME_ANALYZER_PATH = Path("run-time-information-analyzer")
+DECLARATION_GENERATOR_PATH = Path("ts-declaration-file-generator")
+DEFINITELY_TYPED_PATH = Path("DefinitelyTyped")
+NPM_TOOLS_PATH = Path("npm-tools")
+TRANSPILE_PATH = NPM_TOOLS_PATH / "transpile.js"
+REPOSITORY_PATH = CACHE_PATH / "repository"
+PACKAGE_JSON_PATH = DATA_PATH / "package.json"
+README_PATH = DATA_PATH / "README.md"
+MAIN_PATH = DATA_PATH / "index.js"
+TESTS_PATH = DATA_PATH / "tests"
 
 class PackageDataMissingError(Exception):
     pass

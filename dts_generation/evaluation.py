@@ -6,9 +6,9 @@ import sys
 import traceback
 from typing import Optional
 
-from dts_generation._utils import *
-from dts_generation._comparison import build_definitely_typed
-from dts_generation._generation import generate
+from dts_generation.utils import *
+from dts_generation.comparison import build_definitely_typed
+from dts_generation.generation import generate
 
 def evaluate(
     evaluation_path: Path,

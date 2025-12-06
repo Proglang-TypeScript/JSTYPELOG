@@ -1,5 +1,5 @@
-from dts_generation._examplification import generate_examples, CommonJSUnsupportedError, PackageDataMissingError
-from dts_generation._declaration import generate_declarations
-from dts_generation._comparison import generate_comparisons
-from dts_generation._generation import generate
-from dts_generation._evaluation import evaluate
+from dts_generation.examplification import generate_examples, CommonJSUnsupportedError, PackageDataMissingError
+from dts_generation.declaration import generate_declarations
+from dts_generation.comparison import generate_comparisons
+from dts_generation.generation import generate
+from dts_generation.evaluation import evaluate

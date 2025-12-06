@@ -1,10 +1,10 @@
 from pathlib import Path
 import shutil
 
-from dts_generation._utils import *
-from dts_generation._examplification import generate_examples as generate_examples_helper
-from dts_generation._declaration import generate_declarations as generate_declarations_helper
-from dts_generation._comparison import generate_comparisons as generate_comparisons_helper
+from dts_generation.utils import *
+from dts_generation.examplification import generate_examples as generate_examples_helper
+from dts_generation.declaration import generate_declarations as generate_declarations_helper
+from dts_generation.comparison import generate_comparisons as generate_comparisons_helper
 
 def generate(
     package_name: str,

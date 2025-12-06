@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-from dts_generation._utils import *
+from dts_generation.utils import *
 
 def generate_comparisons(
     package_name: str,
