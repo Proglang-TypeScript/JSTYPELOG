@@ -1,10 +1,10 @@
 from pathlib import Path
 import shutil
 
-from dts_generation.utils import *
-from dts_generation.examplification import generate_examples as generate_examples_helper
-from dts_generation.declaration import generate_declarations as generate_declarations_helper
-from dts_generation.comparison import generate_comparisons as generate_comparisons_helper
+from jstypelog.utils import *
+from jstypelog.examplification import generate_examples as generate_examples_helper
+from jstypelog.declaration import generate_declarations as generate_declarations_helper
+from jstypelog.comparison import generate_comparisons as generate_comparisons_helper
 
 def generate(
     package_name: str,

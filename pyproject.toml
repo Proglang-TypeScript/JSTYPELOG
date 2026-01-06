@@ -1,11 +1,11 @@
 [project]
-name = "dts_generation"
+name = "jstypelog"
 version = "1.0.0"
 description = "A Python library for generating and comparing TypeScript .d.ts files for npm packages."
 authors = [{name = "Leonardo Mieschendahl"}]
 dependencies = [
     "openai == 1.106.0",
-    "easy_prompting @ git+https://github.com/Mieschendahl/EasyPrompting.git@6.0.0"
+    "easy_prompting @ git+https://github.com/Proglang-TypeScript/EasyPrompting.git@6.0.0"
 ]
 
 [build-system]

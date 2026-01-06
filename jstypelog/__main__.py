@@ -1,7 +1,7 @@
 from pathlib import Path
 import argparse
 
-from dts_generation import generate, evaluate
+from jstypelog import generate, evaluate
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(

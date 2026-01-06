@@ -1,7 +1,7 @@
 import platform
 from pathlib import Path
 
-from dts_generation.utils import *
+from jstypelog.utils import *
 
 def generate_declarations(
     package_name: str,

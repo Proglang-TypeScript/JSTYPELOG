@@ -2,10 +2,10 @@ import json
 from pathlib import Path
 from typing import Optional
 
-from dts_generation.utils.helpers import create_dir, create_file, dir_empty, get_children, file_exists
-from dts_generation.utils.shell import ShellError, shell
-from dts_generation.utils.printer import printer
-from dts_generation.utils.shared import *
+from jstypelog.utils.helpers import create_dir, create_file, dir_empty, get_children, file_exists
+from jstypelog.utils.shell import ShellError, shell
+from jstypelog.utils.printer import printer
+from jstypelog.utils.shared import *
 
 def build_definitely_typed(build_path: Path, verbose_setup: bool) -> None:
     with printer.with_verbose(verbose_setup):

@@ -1,12 +1,12 @@
-# DTSGeneration
+# JSTYPELOG
 
-DTSGeneration is a Python library that can automatically generate TypeScript type declaration (TSD) files for a given JavaScript npm package.
+JSTYPELOG is a Python library that can automatically generate TypeScript type declaration (TSD) files for a given JavaScript npm package.
 
 It uses examples from the package's GitHub repository to analyze the runtime behavior of the package and infer types for its interface.
 
 Using a large language model (LLM), in this case ChatGPT, we can generate further examples for more complete interface coverage.
 
-This project depends on [EasyPrompting](https://github.com/Mieschendahl/EasyPrompting) for generating additional examples via an LLM and [run-time-information-gathering](https://github.com/Proglang-TypeScript/run-time-information-gathering) and [ts-declaration-file-generator](https://github.com/Proglang-TypeScript/ts-declaration-file-generator) for generating the TypeScript declarations.
+This project depends on [EasyPrompting](https://github.com/Proglang-TypeScript/EasyPrompting) for generating additional examples via an LLM and [run-time-information-gathering](https://github.com/Proglang-TypeScript/run-time-information-gathering) and [ts-declaration-file-generator](https://github.com/Proglang-TypeScript/ts-declaration-file-generator) for generating the TypeScript declarations.
 
 ## Demo
 

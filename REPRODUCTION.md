@@ -18,4 +18,4 @@ Note, that the LLM prompts can depend on the file system state, for example Node
 
 ## Comparison
 
-Evaluation results from previous runs can be found in the repository [DTSGeneration-Evaluation-Results](https://github.com/Mieschendahl/DTSGeneration-Evaluation-Results).
+Evaluation results from previous runs can be found in the repository [JSTYPELOG-Evaluation](https://github.com/Proglang-TypeScript/JSTYPELOG-Evaluation).

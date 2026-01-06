@@ -7,7 +7,7 @@ import subprocess
 import threading
 from typing import Optional
 
-from dts_generation.utils.printer import printer
+from jstypelog.utils.printer import printer
 
 class ShellError(Exception):
     pass
