@@ -13,12 +13,12 @@ This project depends on [EasyPrompting](https://github.com/Proglang-TypeScript/E
 To generate TSD files for an npm package, all you have to do is call the generate function on the package:
 ```python
 from pathlib import Path
-from dts_generation import generate
+from jstypelog import generate
 
 generate(package_name, Path("output/generation"), Path("output/builds"))  # generates declarations in output/generation/declarations
 ```
 
-`dts_generation/__main__.py` shows how to properly use this package.
+`jstypelog/__main__.py` shows how to properly use this package.
 
 ## Setup
 
@@ -30,7 +30,7 @@ generate(package_name, Path("output/generation"), Path("output/builds"))  # gene
 
 ## Manual
 
-The main function that `dts_generation` exposes is the `generate` function. As the name implies, it is responsible for coordinating the generation of example, declaration, and comparison files. To do this, it uses corresponding helper functions `generate_examples`, `generate_declarations`, and `generate_comparisons`.
+The main function that `jstypelog` exposes is the `generate` function. As the name implies, it is responsible for coordinating the generation of example, declaration, and comparison files. To do this, it uses corresponding helper functions `generate_examples`, `generate_declarations`, and `generate_comparisons`.
 
 ### Generate Examples
 
